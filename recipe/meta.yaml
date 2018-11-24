@@ -14,9 +14,9 @@ source:
   sha256: 1d8708286a3e8c6008eb464a5eb57fffd842662c3f1630d7e66c59fd56666741
 
 build:
+  noarch: generic
   merge_build_host: True  # [win]
-  number: 0
-  skip: true  # [win32]
+  number: 1000
   rpaths:
     - lib/R/lib/
     - lib/
@@ -44,8 +44,7 @@ about:
     In addition it provides some utility functions to cut 'dendrogram' and 'hclust'
     objects and to  set/get labels.
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'  # [unix]
-  license_file: '{{ environ["PREFIX"] }}\R\share\licenses\GPL-3'  # [win]
+  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
 
 extra:
   recipe-maintainers:
