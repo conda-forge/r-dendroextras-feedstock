@@ -5,11 +5,9 @@ Home: https://CRAN.R-project.org/package=dendroextras
 
 Package license: GPL (>= 2)
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-dendroextras-feedstock/blob/master/LICENSE.txt)
 
 Summary: Provides extra functions to manipulate dendrograms that build on the base functions provided by the 'stats' package. The main functionality it is designed to add is the ability to colour all the edges in an object of class 'dendrogram' according to cluster membership i.e. each subtree is coloured, not just the terminal leaves. In addition it provides some utility functions to cut 'dendrogram' and 'hclust' objects and to  set/get labels.
-
-
 
 Current build status
 ====================
@@ -38,6 +36,7 @@ Installing `r-dendroextras` from the `conda-forge` channel can be achieved by ad
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `r-dendroextras` can be installed with:
@@ -108,9 +107,9 @@ build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
  * If the version of a package **is not** being increased, please add or increase
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string).
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string).
  * If the version of a package **is** being increased, please remember to return
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string)
    back to 0.
 
 Feedstock Maintainers
