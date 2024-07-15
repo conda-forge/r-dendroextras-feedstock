@@ -1,6 +1,5 @@
 {% set version = '0.2.3' %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-dendroextras
@@ -14,8 +13,7 @@ source:
 
 build:
   noarch: generic
-  merge_build_host: True  # [win]
-  number: 1004
+  number: 1005
   rpaths:
     - lib/R/lib/
     - lib/
